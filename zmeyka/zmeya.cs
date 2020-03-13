@@ -9,23 +9,22 @@ namespace zmeyka
 {
     public class zmeya
     {
-        public Rectangle golova;
+        public snakeBlock golova;
         Random rand;
         public SolidBrush color;
 
         public zmeya(int width, int height)
         {
             rand = new Random();
-            golova.X = controller.kletka.width * rand.Next(controller.client.Width / controller.kletka.width);
-            golova.Y = controller.kletka.height * rand.Next(controller.client.Height / controller.kletka.height);
-            golova.Width = controller.kletka.width;
-            golova.Height = controller.kletka.height;
+            golova = new snakeBlock();
+            golova.x = rand.Next(controller.client.Width / controller.kletka.width);
+            golova.y = rand.Next(controller.client.Height / controller.kletka.height);
             color = new SolidBrush(Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255)));
         }
 
         public void draw(Graphics g)
         {
-            g.FillRectangle(color, golova);
+            g.FillRectangle(color, controller.kletka.width * golova.x, controller.kletka.height * golova.y, controller.kletka.width, controller.kletka.height);
         }
     }
 }

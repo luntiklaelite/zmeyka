@@ -54,6 +54,7 @@
     <Compile Include="kletki.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="snakeBlock.cs" />
     <Compile Include="zmeya.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

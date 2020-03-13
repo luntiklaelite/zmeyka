@@ -27,31 +27,27 @@ namespace zmeyka
                 return;
             if (direct == direction.up)
             {
-                if (phyton.golova.Y <= 0)
-                    phyton.golova.Y = client.Height - kletka.height;
-                else
-                    phyton.golova.Y -= kletka.height;
+                phyton.golova.y -= 1;
+                if (phyton.golova.y < 0)
+                    phyton.golova.y = client.Height/kletka.height-1;                   
             }
             if (direct == direction.down)
             {
-                if (phyton.golova.Y >= client.Height)
-                    phyton.golova.Y = 0;
-                else
-                    phyton.golova.Y += kletka.height;
+                phyton.golova.y += 1;
+                if (phyton.golova.y >= client.Height / kletka.height)
+                    phyton.golova.y = 0;     
             }
             if (direct == direction.left)
             {
-                if (phyton.golova.X <= 0)
-                    phyton.golova.X = client.Width - kletka.width;
-                else
-                    phyton.golova.X -= kletka.width;
+                phyton.golova.x -= 1;
+                if (phyton.golova.x < 0)
+                    phyton.golova.x = client.Width / kletka.width-1;
             }
             if (direct == direction.right)
             {
-                if (phyton.golova.X >= client.Width)
-                    phyton.golova.X = 0;
-                else
-                    phyton.golova.X += kletka.width;
+                phyton.golova.x += 1;
+                if (phyton.golova.x >= client.Height / kletka.height)
+                    phyton.golova.x = 0;
             }
         }
     }
