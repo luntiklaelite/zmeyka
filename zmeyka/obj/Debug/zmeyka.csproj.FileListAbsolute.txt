@@ -1,0 +1,21 @@
+C:\Users\worldskills1\Desktop\zmeyka\zmeyka\zmeyka\bin\Debug\zmeyka.exe.config
+C:\Users\worldskills1\Desktop\zmeyka\zmeyka\zmeyka\obj\Debug\zmeyka.Form1.resources
+C:\Users\worldskills1\Desktop\zmeyka\zmeyka\zmeyka\obj\Debug\zmeyka.Properties.Resources.resources
+C:\Users\worldskills1\Desktop\zmeyka\zmeyka\zmeyka\obj\Debug\zmeyka.csproj.GenerateResource.Cache
+C:\Users\worldskills1\Desktop\zmeyka\zmeyka\zmeyka\bin\Debug\zmeyka.exe
+C:\Users\worldskills1\Desktop\zmeyka\zmeyka\zmeyka\bin\Debug\zmeyka.pdb
+C:\Users\worldskills1\Desktop\zmeyka\zmeyka\zmeyka\obj\Debug\zmeyka.exe
+C:\Users\worldskills1\Desktop\zmeyka\zmeyka\zmeyka\obj\Debug\zmeyka.pdb
+<<<<<<< HEAD
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\bin\Debug\zmeyka.exe.config
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\bin\Debug\zmeyka.exe
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\bin\Debug\zmeyka.pdb
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\obj\Debug\zmeyka.Form1.resources
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\obj\Debug\zmeyka.Properties.Resources.resources
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\obj\Debug\zmeyka.csproj.GenerateResource.cache
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\obj\Debug\zmeyka.csproj.CoreCompileInputs.cache
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\obj\Debug\zmeyka.exe
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\obj\Debug\zmeyka.pdb
+C:\Users\LUNTIKLAELITE\Desktop\zmeyka-master\zmeyka\obj\Debug\zmeyka.csprojAssemblyReference.cache
+=======
+>>>>>>> 3a5bf11e5bee5e69e7492dd1fe5a0f4015b0637b
