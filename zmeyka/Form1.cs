@@ -13,25 +13,27 @@ namespace zmeyka
     public partial class Form1 : Form
     {
         kletki k;
-        zmeya phyton;
         public Form1()
         {
             InitializeComponent();
             this.DoubleBuffered = true;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             ClientSize = new Size(600, 600);
+            controller.rand = new Random();
+            this.Text = "PHYTON";
             k = new kletki(50, 50);
             controller.client = ClientSize;
             controller.kletka = k;
             controller.direct = controller.direction.pause;
-            phyton = new zmeya(50, 50);
-            controller.phyton = phyton;
+            controller.phyton = new zmeya();
+            controller.eat = new eda();
             timer1.Start();
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            phyton.draw(e.Graphics);
+            controller.phyton.draw(e.Graphics);
+            controller.eat.draw(e.Graphics);
             k.draw(e.Graphics, ClientSize);
         }
 
@@ -39,6 +41,7 @@ namespace zmeyka
         {
             controller.refresh();
             Refresh();
+            this.Text = "PHYTON. SCORE: " + controller.score;
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)

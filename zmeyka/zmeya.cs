@@ -9,22 +9,32 @@ namespace zmeyka
 {
     public class zmeya
     {
-        public snakeBlock golova;
-        Random rand;
+        public gameBlock golova;
+        public List<gameBlock> telo;
+        public gameBlock hvost;
         public SolidBrush color;
 
-        public zmeya(int width, int height)
+        public zmeya()
         {
-            rand = new Random();
-            golova = new snakeBlock();
-            golova.x = rand.Next(controller.client.Width / controller.kletka.width);
-            golova.y = rand.Next(controller.client.Height / controller.kletka.height);
+            golova = new gameBlock();
+            hvost = new gameBlock();
+            Random rand = controller.rand;
+            golova.x = controller.rand.Next(controller.client.Width / controller.kletka.width);
+            golova.y = controller.rand.Next(controller.client.Height / controller.kletka.height);
+            hvost.x = golova.x-1;
+            hvost.y = golova.y;
+            telo = new List<gameBlock>();
             color = new SolidBrush(Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255)));
         }
 
         public void draw(Graphics g)
         {
             g.FillRectangle(color, controller.kletka.width * golova.x, controller.kletka.height * golova.y, controller.kletka.width, controller.kletka.height);
+            foreach (gameBlock gb in telo)
+            {
+                g.FillRectangle(color, controller.kletka.width * gb.x, controller.kletka.height * gb.y, controller.kletka.width, controller.kletka.height);
+            }
+            g.FillRectangle(color, controller.kletka.width * hvost.x, controller.kletka.height * hvost.y, controller.kletka.width, controller.kletka.height);
         }
     }
 }

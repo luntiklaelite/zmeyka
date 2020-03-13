@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace zmeyka
 {
-    public class snakeBlock
+    public class gameBlock
     {
         public int x, y;
     }
